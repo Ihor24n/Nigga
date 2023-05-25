@@ -1,0 +1,22 @@
+public String[] teams(){
+        Scanner scanner = new Scanner(System.in);
+        String[] teams = new String[10]; // Масив для збереження команд
+        for( int i = 0; i<10; i++){
+            System.out.print("Введіть команду " + (i + 1) + ": ");
+            teams[i] = scanner.nextLine(); // Зчитування назви команди з клавіатури
+        }
+        System.out.println("Команди на турнірі :");
+        for (String team : teams) {
+            System.out.println(team);
+        }
+    return teams;
+    }
+
+    public void startTournament() {
+        System.out.println("Початок турніру " + name);
+        System.out.println("Кількість команд: " + numberOfTeams);
+
+
+
+        System.out.println("Турнір завершено");
+    }
